@@ -21,4 +21,9 @@ public class Bloco {
     private Integer id;
     private Date inicio;
     private Date fim;
+
+    @ManyToOne
+    @JoinColumn(name = "atividade_id")
+    private Atividade atividade;
+
 }
